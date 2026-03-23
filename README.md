@@ -10,7 +10,7 @@ Cada projeto está estruturado em sua própria pasta, permitindo fácil navegaç
 Os projetos aqui presentes refletem não apenas a execução dos layouts propostos, mas também a aplicação de melhorias, organização de código e busca por padrões mais próximos do mercado.
 
 
-#### Projetos
+#### Projetos realizados
 [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)
 
 
@@ -26,5 +26,5 @@ Each project is structured in its own folder, allowing for easy navigation, main
 
 The projects included here reflect not only the implementation of the proposed layouts, but also improvements, code organization, and the pursuit of industry-level standards.
 
-#### projects
+#### projects carried out
 [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)
