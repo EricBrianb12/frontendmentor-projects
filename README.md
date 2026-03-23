@@ -10,6 +10,13 @@ Cada projeto está estruturado em sua própria pasta, permitindo fácil navegaç
 Os projetos aqui presentes refletem não apenas a execução dos layouts propostos, mas também a aplicação de melhorias, organização de código e busca por padrões mais próximos do mercado.
 
 
+#### Projetos
+[Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)
+
+
+
+
+
 ### [EN]
 This repository was created to centralize and organize all projects developed from Frontend Mentor challenges.
 
@@ -18,3 +25,6 @@ The goal is to practice and improve front-end development skills through real-wo
 Each project is structured in its own folder, allowing for easy navigation, maintenance, and individual visualization. This repository also serves as a continuous learning portfolio, showcasing my technical growth over time.
 
 The projects included here reflect not only the implementation of the proposed layouts, but also improvements, code organization, and the pursuit of industry-level standards.
+
+#### projects
+[Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)

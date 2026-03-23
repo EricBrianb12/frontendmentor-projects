@@ -155,11 +155,13 @@ li::marker {
 
 .instructions ul {
   list-style: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 10px;
 }
 
 .instructions ul li {
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .instructions ul li:nth-last-child(1) {
