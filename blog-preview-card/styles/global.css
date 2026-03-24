@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* colors */
+  --yellow: #F4D04E;
+  --gray-950: #111111;
+  --gray-500: #6B6B6B;
+  --white: #FFFFFF;
+
+  /* typography */
+  --font-family: 'Figtree', sans-serif;
+  --title: 900 24px/1.5 var(--font-family);
+  --text: 500 16px/1.5 var(--font-family);
+  --text-s: 500 14px/1.5 var(--font-family);
+  --text-exb: 900 14px/1.5 var(--font-family);
+
+}
