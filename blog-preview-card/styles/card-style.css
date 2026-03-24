@@ -8,9 +8,69 @@
   box-shadow: 8px 8px 0px #000;
   display: grid;
   gap: 24px;
+  transition: 0.1s ease-in-out;
+  position: relative;
+
+  &:hover {
+    box-shadow: 15px 15px 0px #000;
+  }
+
+  .card__link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .card__content,
+  .card__author {
+    position: relative;
+    z-index: 2;
+  }
 
   .card__thumb {
     width: 100%;
     border-radius: 10px;
+  }
+
+  .card__content {
+    display: grid;
+    gap: 12px;
+
+    .card__category {
+      background-color: var(--yellow);
+      width: fit-content;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .card__published {
+      font: var(--text-s);
+    }
+
+    .card__title a {
+      font: var(--title);
+      text-decoration: none;
+      color: var(--gray-950);
+
+      .card:hover & {
+        color: var(--yellow);
+      }
+    }
+
+    .card__description {
+      font: var(--text);
+      color: var(--gray-500);
+    }
+  }
+
+  .card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

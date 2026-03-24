@@ -15,10 +15,10 @@
 
   /* typography */
   --font-family: 'Figtree', sans-serif;
-  --title: 900 24px/1.5 var(--font-family);
-  --text: 500 16px/1.5 var(--font-family);
+  --title: 800 24px/1.5 var(--font-family);
+  --text: 400 16px/1.5 var(--font-family);
   --text-s: 500 14px/1.5 var(--font-family);
-  --text-exb: 900 14px/1.5 var(--font-family);
+  --text-s-exb: 800 14px/1.5 var(--font-family);
 }
 
 body {
@@ -27,4 +27,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
+  color: var(--gray-950);
+}
+
+span {
+  font: var(--text-s-exb);
+  color: var(--gray-950);
 }
