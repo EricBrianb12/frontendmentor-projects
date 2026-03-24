@@ -17,6 +17,7 @@
 
 .card_info {
   margin-block: 20px;
+  text-align: center;
 
   .card_title {
     margin-bottom: 4px;
@@ -32,6 +33,7 @@
   margin-bottom: 24px;
   color: var(--white);
   font: var(--p_regular);
+  text-align: center;
 }
 
 .card_nav {
