@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,14 +16,15 @@
   --white: #fff;
 
   /* Tipography */
-  --font-family: "Inter";
-  --title: 700 24px/1.5 var(--font-family), sans-serif;
+  --font-family: "Inter", sans-serif;
+  --title: 500 24px/1.5 var(--font-family), sans-serif;
   --p_regular: normal 14px/1.5 var(--font-family), sans-serif;
   --p_bold: 700 14px/1.5 var(--font-family), sans-serif;
 }
 
 h1 {
   font: var(--title);
+  color: var(--white);
 }
 
 .p_regular {
@@ -30,4 +33,26 @@ h1 {
 
 .p_bold {
   font: var(--p_bold);
+}
+
+body {
+  background-color: var(--grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 24px;
+  }
+
+  .infos {
+    text-align: center;
+  }
+
+  blockquote {
+    text-align: center;
+  }
 }

@@ -1,0 +1,62 @@
+.card {
+  width: 100%;
+  max-width: 384px;
+  background-color: var(--grey-800);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.card_avatar {
+  width: 100%;
+  max-width: 88px;
+  border-radius: 50%;
+}
+
+.card_info {
+  margin-block: 20px;
+
+  .card_title {
+    margin-bottom: 4px;
+  }
+
+  .card_location {
+    color: var(--green);
+    font: var(--p_bold);
+  }
+}
+
+.card_bio {
+  margin-bottom: 24px;
+  color: var(--white);
+  font: var(--p_regular);
+}
+
+.card_nav {
+  width: 100%;
+}
+
+.card_list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.card_list a {
+  display: block;
+  padding: 12px;
+  background: var(--grey-700);
+  border-radius: 8px;
+  font: var(--p_bold);
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    background: var(--green);
+    color: var(--grey-900);
+  }
+}
