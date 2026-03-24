@@ -21,6 +21,15 @@
   --text-s-exb: 800 14px/1.5 var(--font-family);
 }
 
+@media (max-width: 400px) {
+  :root {
+    --title: 800 20px/1.5 var(--font-family);
+    --text: 400 14px/1.5 var(--font-family);
+    --text-s: 500 12px/1.5 var(--font-family);
+    --text-s-exb: 800 12px/1.5 var(--font-family);
+  }
+}
+
 body {
   background-color: var(--yellow);
   display: flex;
@@ -28,6 +37,12 @@ body {
   align-items: center;
   min-height: 100dvh;
   color: var(--gray-950);
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 24px;
+  }
 }
 
 span {
