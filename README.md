@@ -12,6 +12,8 @@ Os projetos aqui presentes refletem não apenas a execução dos layouts propost
 
 ### Projetos realizados
 
+#### Iniciante
+
 Projeto 01 | [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Projeto 02 | [Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 Projeto 03 | [Card de blog](https://frontendmentor-projects-ibtm.vercel.app)<br>
@@ -31,6 +33,8 @@ Each project is structured in its own folder, allowing for easy navigation, main
 The projects included here reflect not only the implementation of the proposed layouts, but also improvements, code organization, and the pursuit of industry-level standards.
 
 ### projects carried out
+
+#### Newbie
 
 Project 01 | [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Project 02 | [social links profile Page](https://frontendmentor-projects-a5bw.vercel.app/)<br>
