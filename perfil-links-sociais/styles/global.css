@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+
+  --green: #c4f82a;
+  --white: #fff;
+
+  /* Tipography */
+  --font-family: "Inter";
+  --title: 700 24px/1.5 var(--font-family), sans-serif;
+  --p_regular: normal 14px/1.5 var(--font-family), sans-serif;
+  --p_bold: 700 14px/1.5 var(--font-family), sans-serif;
+}
+
+h1 {
+  font: var(--title);
+}
+
+.p_regular {
+  font: var(--p_regular);
+}
+
+.p_bold {
+  font: var(--p_bold);
+}
