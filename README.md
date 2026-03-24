@@ -14,9 +14,9 @@ Os projetos aqui presentes refletem não apenas a execução dos layouts propost
 Projeto 01 | [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Projeto 02 | [Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 
-
-
-
+<br>
+<br>
+<br>
 
 ### [EN]
 This repository was created to centralize and organize all projects developed from Frontend Mentor challenges.
