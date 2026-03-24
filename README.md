@@ -12,7 +12,7 @@ Os projetos aqui presentes refletem não apenas a execução dos layouts propost
 
 #### Projetos realizados
 [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)
-[Página de links sociais](https://frontendmentor-projects-cyan.vercel.app/)
+[Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)
 
 
 
@@ -29,4 +29,4 @@ The projects included here reflect not only the implementation of the proposed l
 
 #### projects carried out
 [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)
-[social links profile Page](https://frontendmentor-projects-cyan.vercel.app/)
+[social links profile Page](https://frontendmentor-projects-a5bw.vercel.app/)
