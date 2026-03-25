@@ -17,7 +17,7 @@ Os projetos aqui presentes refletem não apenas a execução dos layouts propost
 Projeto 01 | [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Projeto 02 | [Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 Projeto 03 | [Card de blog](https://frontendmentor-projects-ibtm.vercel.app)<br>
-Projeto 04 | [Card QRcode](#)<br>
+Projeto 04 | [Card QRcode](https://frontendmentor-projects-jb7u.vercel.app/)<br>
 
 <br>
 <br>
@@ -40,4 +40,4 @@ The projects included here reflect not only the implementation of the proposed l
 Project 01 | [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Project 02 | [social links profile Page](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 Project 03 | [Blog preview card](https://frontendmentor-projects-ibtm.vercel.app)<br>
-Project 04 | [QRcode card](#)<br>
+Project 04 | [QRcode card](https://frontendmentor-projects-jb7u.vercel.app/)<br>
