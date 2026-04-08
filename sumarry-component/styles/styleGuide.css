@@ -13,7 +13,7 @@
   --red-50: #fff6f6;
   --green-500: #00bb8f;
   --green-50: #f2fcf9;
-  --gradient01: linear-gradient(#4d21c9, #2521c9);
+  --gradient01: linear-gradient(#4d21c9, rgba(37, 33, 201, 0));
   --gradient02: linear-gradient(#7755ff, #2f2ce9);
 
   /* fonts */
