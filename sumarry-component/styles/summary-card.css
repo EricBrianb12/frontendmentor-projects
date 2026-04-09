@@ -51,7 +51,7 @@
   gap: 16px;
 }
 
-.summary-list li {
+.summary-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +99,32 @@
   }
 
   .result-card h2 {
-    font-size: var(--textPreset05-b);
+    font: var(--textPreset05-b);
+  }
+
+  .score-container {
+    width: 140px;
+    height: 140px;
+  }
+
+  .result-status p:first-child {
+    font: var(--textPreset04);
+  }
+
+  .result-status p:last-child {
+    font: var(--textPreset06-m);
+  }
+
+  .summary-card h2 {
+    font: var(--textPreset05-b);
+  }
+
+  .summary-item {
+    padding-block: 17px;
+  }
+
+  .summary-label span,
+  .summary-score {
+    font: var(--textPreset06-m);
   }
 }
