@@ -19,8 +19,42 @@ body {
   font-size: 1.6rem;
   background-color: var(--blue-50);
   font-family: var(--font-family);
+  padding-inline: 40px;
 }
 
 ul {
   list-style: none;
+}
+
+.btn-primary {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  padding-block: 15.5px;
+  background: var(--navy-950);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient02);
+  border-radius: 100px;
+  transition: opacity 0.35s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-inline: 0px;
+    height: auto;
+  }
 }
