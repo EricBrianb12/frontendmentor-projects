@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 763px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: var(--white);
   border-radius: 32px;
 }
@@ -38,7 +39,7 @@
 }
 
 .result-status p:nth-child(even) {
-  width: 25ch;
+  max-width: 25ch;
 }
 
 .summary-card {
@@ -107,11 +108,11 @@
     height: 140px;
   }
 
-  .result-status p:first-child {
+  .result-title {
     font: var(--textPreset04);
   }
 
-  .result-status p:last-child {
+  .result-description {
     font: var(--textPreset06-m);
   }
 
