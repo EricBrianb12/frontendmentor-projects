@@ -18,7 +18,8 @@ Projeto 01 | [Página de receitas](https://frontendmentor-projects-cyan.vercel.a
 Projeto 02 | [Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 Projeto 03 | [Card de blog](https://frontendmentor-projects-ibtm.vercel.app)<br>
 Projeto 04 | [Card QRcode](https://frontendmentor-projects-jb7u.vercel.app/)<br>
-Projeto 05 | [Componente de resultados](-)<br>
+Projeto 05 | [Componente de resultados](https://sumarry-six.vercel.app/)<br>
+Projeto 06 | [Card de visualização de produto](https://frontendmentor-projects-xf7f.vercel.app/)<br>
 
 <br>
 <br>
@@ -42,4 +43,5 @@ Project 01 | [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)<br>
 Project 02 | [social links profile Page](https://frontendmentor-projects-a5bw.vercel.app/)<br>
 Project 03 | [Blog preview card](https://frontendmentor-projects-ibtm.vercel.app)<br>
 Project 04 | [QRcode card](https://frontendmentor-projects-jb7u.vercel.app/)<br>
-Project 05 | [Summary component](-)<br>
+Project 05 | [Summary component](https://sumarry-six.vercel.app/)<br>
+Projeto 06 | [Product preview card](https://frontendmentor-projects-xf7f.vercel.app/)<br>
