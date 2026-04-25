@@ -1,0 +1,56 @@
+:root {
+  /* cores */
+  --black: #1c232b;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --white: #ffffff;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+
+  --font-text: "Montserrat", sans-serif;
+  --font-title: "Fraunces", serif;
+  --text01: 700 3.2rem/1 var(--font-title);
+  --text02: 700 1.4rem/1.1 var(--font-text);
+  --text03: 500 1.4rem/1.6 var(--font-text);
+  --text04: 500 1.2rem/1.2 var(--font-text);
+  --text05: 500 1.3rem/1.2 var(--font-text);
+}
+
+.black {
+  color: var(--black);
+}
+.grey {
+  color: var(--grey);
+}
+.cream {
+  color: var(--cream);
+}
+.white {
+  color: var(--white);
+}
+.green-500 {
+  color: var(--green-500);
+}
+.green-700 {
+  color: var(--green-700);
+}
+.text01 {
+  font: var(--text01);
+}
+.text02 {
+  font: var(--text02);
+}
+.text03 {
+  font: var(--text03);
+}
+.text04 {
+  font: var(--text04);
+}
+.text04 {
+  font: var(--text04);
+  letter-spacing: 5px;
+}
+.text05 {
+  font: var(--text05);
+  text-decoration: line-through;
+}
