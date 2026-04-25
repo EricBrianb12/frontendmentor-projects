@@ -11,5 +11,38 @@ html {
 }
 
 body {
+  height: 100dvh;
   font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-cream);
+  padding-inline: 13px;
+}
+
+img {
+  width: 100%;
+  max-width: max-content;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  padding-block: 16px;
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  font: var(--text02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-green-700);
 }

@@ -1,11 +1,11 @@
 :root {
   /* cores */
-  --black: #1c232b;
-  --grey: #6c7289;
-  --cream: #f2eae2;
-  --white: #ffffff;
-  --green-500: #3d8168;
-  --green-700: #1a4032;
+  --color-black: #1c232b;
+  --color-grey: #6c7289;
+  --color-cream: #f2eae2;
+  --color-white: #ffffff;
+  --color-green-500: #3d8168;
+  --color-green-700: #1a4032;
 
   --font-text: "Montserrat", sans-serif;
   --font-title: "Fraunces", serif;
@@ -16,23 +16,23 @@
   --text05: 500 1.3rem/1.2 var(--font-text);
 }
 
-.black {
-  color: var(--black);
+.color-black {
+  color: var(--color-black);
 }
-.grey {
-  color: var(--grey);
+.color-grey {
+  color: var(--color-grey);
 }
-.cream {
-  color: var(--cream);
+.color-cream {
+  color: var(--color-cream);
 }
-.white {
-  color: var(--white);
+.color-white {
+  color: var(--color-white);
 }
-.green-500 {
-  color: var(--green-500);
+.color-green-500 {
+  color: var(--color-green-500);
 }
-.green-700 {
-  color: var(--green-700);
+.color-green-700 {
+  color: var(--color-green-700);
 }
 .text01 {
   font: var(--text01);
@@ -52,5 +52,4 @@
 }
 .text05 {
   font: var(--text05);
-  text-decoration: line-through;
 }

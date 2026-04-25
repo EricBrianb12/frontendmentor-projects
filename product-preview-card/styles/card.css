@@ -1,0 +1,40 @@
+.card {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
+.card-image img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card-info {
+  padding: 32px;
+}
+
+.card-info h1 {
+  padding-block: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-block: 32px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-image img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
