@@ -1,0 +1,22 @@
+:root {
+  --text01: 600 1.375rem/1.25 "Outfit", sans-serif;
+  --text02: 300 1.125rem/1.45 "Outfit", sans-serif;
+  --text03: 600 1rem/1.25 "Outfit", sans-serif;
+  --text03-regular: 400 1rem/1.25 "Outfit", sans-serif;
+}
+
+.text01 {
+  font: var(--text01);
+}
+
+.text02 {
+  font: var(--text02);
+}
+
+.text03 {
+  font: var(--text03);
+}
+
+.text03-regular {
+  font: var(--text03-regular);
+}
