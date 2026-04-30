@@ -24,6 +24,7 @@ button {
 .btn-change {
   font: var(--text03-bold);
   color: var(--blue-700);
+  text-align: right;
 }
 
 .btn-change:hover {
