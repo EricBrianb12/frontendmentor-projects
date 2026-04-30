@@ -3,6 +3,6 @@
     "clean-css-cli": "^5.6.3"
   },
   "scripts": {
-    "minify:css": "cleancss -o dist/style.min.css css/main.css"
+    "minify:css": "cleancss -o dist/main.min.css css/main.css"
   }
 }
