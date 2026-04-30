@@ -3,7 +3,6 @@ button {
   display: block;
   background-color: transparent;
   cursor: pointer;
-  width: 100%;
   transition: .3s ease-in-out;
 }
 
