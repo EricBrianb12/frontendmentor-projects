@@ -1,0 +1,26 @@
+:root {
+  --text01: 900 clamp(22px, 4vw, 28px)/1.35 "Red Hat Display", sans-serif;
+  --text03: 900 clamp(15px, 4vw, 16px)/1.35 "Red Hat Display", sans-serif;
+  --text03-bold: 700 clamp(15px, 4vw, 16px)/1.35 "Red Hat Display", sans-serif;
+  --text03-medium: 500 clamp(15px, 4vw, 16px)/1.35 "Red Hat Display", sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: Antialiased;
+}
+
+.text01 {
+  font: var(--text01);
+}
+
+.text03 {
+  font: var(--text03);
+}
+
+.text03-bold {
+  font: var(--text03-bold);
+}
+
+.text03-medium {
+  font: var(--text03-medium);
+}

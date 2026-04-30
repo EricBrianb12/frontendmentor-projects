@@ -21,6 +21,7 @@ Projeto 04 | [Card QRcode](https://frontendmentor-projects-jb7u.vercel.app/)<br>
 Projeto 05 | [Componente de resultados](https://sumarry-six.vercel.app/)<br>
 Projeto 06 | [Card de visualização de produto](https://frontendmentor-projects-xf7f.vercel.app/)<br>
 Projeto 07 | [Card de visualização de NFT](https://nft-preview-card-flame-iota.vercel.app/)<br>
+Projeto 08 | [Componente de resumo de pedido](-)<br>
 
 <br>
 <br>
@@ -47,3 +48,4 @@ Project 04 | [QRcode card](https://frontendmentor-projects-jb7u.vercel.app/)<br>
 Project 05 | [Summary component](https://sumarry-six.vercel.app/)<br>
 Projeto 06 | [Product preview card](https://frontendmentor-projects-xf7f.vercel.app/)<br>
 Project 07 | [NFT preview card](https://nft-preview-card-flame-iota.vercel.app/)<br>
+Project 08 | [Order summary component](-)<br>

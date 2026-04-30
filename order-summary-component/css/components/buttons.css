@@ -1,0 +1,40 @@
+button {
+  border: none;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+
+.btn-payment {
+  background-color: var(--blue-700);
+  color: var(--white);
+  margin-block: 2rem;
+  padding: .75rem .5rem;
+  font: var(--text03);
+  border-radius: .6875rem;
+  box-shadow: 0 20px 20px rgba(56, 42, 225, 0.1903);
+}
+
+.btn-payment:hover {
+  background-color: var(--purple-500);
+}
+
+.btn-change {
+  font: var(--text03-bold);
+  color: var(--blue-700);
+}
+
+.btn-change:hover {
+  color: var(--purple-500);
+}
+
+.btn-cancel {
+  font: var(--text03);
+  color: var(--gray-600);
+}
+
+.btn-cancel:hover {
+  color: var(--blue-950);
+}
