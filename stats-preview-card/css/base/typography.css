@@ -1,0 +1,38 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
+
+  /* --text01: 700 36px/1.25 var(--font-primary); */
+  --text01: 700 clamp(28px, 6vw, 36px)/1.25 var(--font-primary);
+  --text02: 700 28px/1.25 var(--font-primary);
+  --text03: 700 24px/1.2 var(--font-primary);
+  --text04: 400 15px/1.65 var(--font-primary);
+  --text05: 400 12px/2 var(--font-secondary);
+  --text05-letter-spacing: 1px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.text01 {
+  font: var(--text01);
+}
+
+.text02 {
+  font: var(--text02);
+}
+
+.text03 {
+  font: var(--text03);
+}
+
+.text04 {
+  font: var(--text04);
+}
+
+.text05 {
+  font: var(--text05);
+  letter-spacing: var(--text05-letter-spacing);
+  text-transform: uppercase;
+}
