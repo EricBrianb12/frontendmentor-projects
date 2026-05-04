@@ -3,8 +3,7 @@
 .btn-luxury {
   text-decoration: none;
   font: var(--text02);
-  display: block;
-  max-width: max-content;
+  display: inline-block;
   background-color: var(--gray-100);
   padding: 11.5px 32px;
   border-radius: 100px;
