@@ -1,0 +1,19 @@
+:root {
+  --font-primary: "Big Shoulders Display", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
+
+  --text01: 700 40px/1.2 var(--font-primary);
+  --text02: 400 15px/1.65 var(--font-secondary);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.text01 {
+  font: var(--text01);
+}
+
+.text02 {
+  font: var(--text02);
+}

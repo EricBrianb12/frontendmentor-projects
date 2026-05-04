@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 20px;
+  background-color: var(--gray-100);
+}
+
+.card {
+  max-width: 921px;
+  display: flex;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 48px;
+}
+
+.sedans {
+  background-color: var(--gold-500);
+  border-radius: 8px 0 0 8px;
+}
+.suvs {
+  background-color: var(--cyan-800);
+}
+.luxury {
+  background-color: var(--green-950);
+  border-radius: 0px 8px 8px 0;
+}
+
+.card-item img {
+  margin-bottom: 40px;
+}
+
+.card-item h2 {
+  margin-bottom: 24px;
+}
+
+.card-item p {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 608px;
+    flex-direction: column;
+  }
+
+  .sedans {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card-item p {
+    margin-bottom: 24px;
+  }
+}

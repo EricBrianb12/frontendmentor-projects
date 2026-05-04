@@ -1,0 +1,33 @@
+.btn-sedans,
+.btn-suvs,
+.btn-luxury {
+  text-decoration: none;
+  font: var(--text02);
+  display: block;
+  max-width: max-content;
+  background-color: var(--gray-100);
+  padding: 11.5px 32px;
+  border-radius: 100px;
+  border: 2px solid var(--white);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-sedans:hover,
+.btn-suvs:hover,
+.btn-luxury:hover {
+  border: 2px solid var(--white);
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-sedans {
+  color: var(--gold-500);
+}
+
+.btn-suvs {
+  color: var(--cyan-800);
+}
+
+.btn-luxury {
+  color: var(--green-950);
+}

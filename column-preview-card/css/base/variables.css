@@ -1,0 +1,58 @@
+:root {
+  /* Core colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Grayscale */
+  --gray-100: #f2f2f2;
+
+  /* Green */
+  --green-950: #004140;
+  --green-500: #19b89d;
+
+  /* Cyan */
+  --cyan-800: #006971;
+  --cyan-500: #26b5c0;
+
+  /* Gold */
+  --gold-500: #e28625;
+  --gold-200: #ffd473;
+}
+
+/* Text utility classes */
+.white {
+  color: var(--white);
+  opacity: 75%;
+}
+
+.black {
+  color: var(--black);
+}
+
+.gray-100 {
+  color: var(--gray-100);
+}
+
+.green-950 {
+  color: var(--green-950);
+}
+
+.green-500 {
+  color: var(--green-500);
+}
+
+.cyan-800 {
+  color: var(--cyan-800);
+}
+
+.cyan-500 {
+  color: var(--cyan-500);
+}
+
+.gold-500 {
+  color: var(--gold-500);
+}
+
+.gold-200 {
+  color: var(--gold-200);
+}
