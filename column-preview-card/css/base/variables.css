@@ -1,6 +1,6 @@
 :root {
   /* Core colors */
-  --white: #ffffff;
+  --white: rgba(255, 255, 255, 0.69);
   --black: #000000;
 
   /* Grayscale */
@@ -22,7 +22,6 @@
 /* Text utility classes */
 .white {
   color: var(--white);
-  opacity: 75%;
 }
 
 .black {
