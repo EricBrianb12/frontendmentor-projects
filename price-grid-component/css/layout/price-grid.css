@@ -1,0 +1,25 @@
+main {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-grid {
+  max-width: 653px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.community {
+  grid-column: 1/-1;
+  padding: 40px;
+}
+
+.subscription {
+  padding: 40px;
+}
+
+.why-us {
+  padding: 40px;
+}

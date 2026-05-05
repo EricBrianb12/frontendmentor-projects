@@ -1,0 +1,55 @@
+:root {
+  --font-primary: "Karla", sans-serif;
+
+  --text01: 700 32px/1.15 var(--font-primary);
+  --text01-letter-spacing: -0.4px;
+
+  --text02: 700 24px/1.15 var(--font-primary);
+  --text02-letter-spacing: -0.25px;
+
+  --text03: 700 18px/1.15 var(--font-primary);
+  --text03-letter-spacing: -0.25px;
+
+  --text04: 700 16px/1.45 var(--font-primary);
+  --text04-letter-spacing: -0.25px;
+
+  --text04-regular: 400 16px/1.65 var(--font-primary);
+  --text04-regular-letter-spacing: -0.5px;
+
+  --text05: 400 14px/1.45 var(--font-primary);
+  --text05-letter-spacing: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.text01 {
+  font: var(--text01);
+  letter-spacing: var(--text01-letter-spacing);
+}
+
+.text02 {
+  font: var(--text02);
+  letter-spacing: var(--text02-letter-spacing);
+}
+
+.text03 {
+  font: var(--text03);
+  letter-spacing: var(--text03-letter-spacing);
+}
+
+.text04 {
+  font: var(--text04);
+  letter-spacing: var(--text04-letter-spacing);
+}
+
+.text04-regular {
+  font: var(--text04-regular);
+  letter-spacing: var(--text04-regular-letter-spacing);
+}
+
+.text05 {
+  font: var(--text05);
+  letter-spacing: var(--text05-letter-spacing);
+}

@@ -1,0 +1,40 @@
+:root {
+  /* Core colors */
+  --white: #ffffff;
+
+  /* Grayscale */
+  --gray-500: #9aa7be;
+
+  /* Teal */
+  --teal-500: #2ab3b1;
+  --teal-400: #4abfbd;
+  --teal-100: #e6eff5;
+
+  /* Green */
+  --green-400: #c0df33;
+}
+
+/* Text utility classes */
+.white {
+  color: var(--white);
+}
+
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.teal-500 {
+  color: var(--teal-500);
+}
+
+.teal-400 {
+  color: var(--teal-400);
+}
+
+.teal-100 {
+  color: var(--teal-100);
+}
+
+.green-400 {
+  color: var(--green-400);
+}
