@@ -4,59 +4,93 @@ Este documento descreve o fluxo padrão para iniciar um novo projeto Frontend Me
 
 ## Objetivo
 Criar uma base consistente para cada novo desafio, incluindo:
-- estrutura de arquivos HTML/CSS
+- estrutura inicial de arquivos HTML/CSS
+- atualização automática do `README.md` da raiz com o próximo número de projeto
 - variáveis de cor
 - variáveis de tipografia
-- importação de fonte do Google Fonts
-- README do projeto no mesmo estilo dos outros
-- atualização do README principal da raiz com placeholder para link
+- `README.md` interno do projeto no mesmo estilo dos projetos existentes
 
-## Passo a passo
+## Fluxo obrigatório ao iniciar um novo projeto
 
-1. Perguntar ao usuário:
-   - nome do projeto / nome do desafio
-   - quais cores principais e secundárias serão usadas
-   - qual fonte do Google Fonts será usada e quais pesos
-   - se há outras configurações de tipografia específicas
+Sempre que o usuário pedir para criar um novo projeto com base neste arquivo, seguir esta ordem:
 
-2. Criar o projeto com a estrutura padrão:
-   - `index.html`
-   - `css/main.css`
-   - `css/base/reset.css`
-   - `css/base/typograph.css`
-   - `css/base/variables.css`
-   - `css/components/*` (quando necessário)
+1. Perguntar apenas o nome do projeto.
+2. Após receber o nome:
+   - ler o `README.md` da raiz
+   - identificar o último projeto listado
+   - definir o próximo número do projeto seguindo a mesma organização do documento
+   - adicionar o novo projeto no `README.md` da raiz com placeholder `-` no link
+   - criar a pasta do projeto com o nome informado pelo usuário
+   - montar a estrutura inicial de arquivos e pastas
+3. Depois que a estrutura estiver criada, perguntar quais cores devem ser usadas.
+4. Com a resposta do usuário, criar `css/base/variables.css` seguindo o padrão adotado no repositório.
+5. Após finalizar as variáveis de cor, perguntar quais são as variáveis de tipografia.
+6. Com a resposta do usuário, criar `css/base/typography.css` seguindo a mesma estrutura utilizada nos projetos já existentes.
+7. Após finalizar as variáveis, criar o `README.md` dentro da pasta do projeto seguindo o padrão dos outros projetos.
 
-3. Adicionar no `css/main.css` as importações:
-   - `@import url("./base/reset.css");`
-   - `@import url("./base/typograph.css");`
-   - `@import url("./base/variables.css");`
-   - `@import url("./components/button.css");` (se houver)
+## Estrutura padrão do projeto
 
-4. Criar variáveis de cor em `css/base/variables.css` usando nomes curtos:
-   - `--white`, `--black`, `--gray-600`, `--purple-500`, `--blue-700`, etc.
-   - classes utilitárias de texto com mesmo nome das variáveis
-   - classes utilitárias de fundo `bg-*` usando as mesmas variáveis
+Para cada novo projeto, criar:
+- `index.html`
+- `css/main.css`
+- `css/base/reset.css`
+- `css/base/typography.css`
+- `css/base/variables.css`
+- `css/layout/`
+- `css/components/` quando necessário
+- `assets/`
 
-5. Criar variáveis de tipografia em `css/base/typograph.css` usando shorthand `font`:
-   - `--text01`, `--text02`, `--text03`, `--text03-bold`, `--text03-medium`, etc.
-   - classes `.text01`, `.text02`, `.text03`, `.text03-bold`, `.text03-medium`, etc.
+## Regras do `main.css`
 
-6. Incluir importação do Google Font no `index.html` quando solicitado.
+Adicionar em `css/main.css`:
 
-7. Criar `README.md` do projeto no padrão dos outros projetos:
-   - título: `# frontendmentor-projects`
-   - descrição curta do desafio
-   - seção `## desafio | Projeto XX`
-   - imagem placeholder `![alt text](preview.jpg)`
+```css
+@import url("./base/reset.css");
+@import url("./base/typography.css");
+@import url("./base/variables.css");
+```
 
-8. Atualizar `README.md` da raiz adicionando o novo projeto com placeholder `-` no link.
+Se o projeto exigir componentes separados, adicionar também os imports necessários de `css/components/`.
+
+## Regras de cores
+
+Ao criar `css/base/variables.css`:
+- usar nomes curtos e consistentes como `--white`, `--black`, `--gray-600`, `--blue-700`
+- organizar por grupos de cor quando fizer sentido
+- criar classes utilitárias de texto com o mesmo nome das variáveis
+- criar classes utilitárias de fundo com prefixo `bg-` quando necessário
+- manter o estilo já utilizado nos projetos anteriores
+
+## Regras de tipografia
+
+Ao criar `css/base/typography.css`:
+- usar variáveis como `--text01`, `--text02`, `--text03`, `--text03-bold`, `--text03-medium`
+- usar shorthand `font`
+- incluir classes utilitárias correspondentes como `.text01`, `.text02`, `.text03`
+- incluir `letter-spacing` quando isso fizer parte da definição tipográfica
+- manter a mesma lógica já aplicada nos projetos existentes
+
+## Regras do `README.md` do projeto
+
+Criar o `README.md` do projeto com este padrão:
+- título: `# frontendmentor-projects`
+- descrição curta do desafio
+- seção `## desafio | Projeto XX`
+- imagem placeholder `![alt text](preview.jpg)`
+
+## Regra de interação
+
+Não pedir todas as informações de uma vez.
+
+Seguir sempre este fluxo conversacional:
+1. pedir nome do projeto
+2. criar estrutura inicial e atualizar `README.md` da raiz
+3. pedir cores
+4. criar `variables.css`
+5. pedir variáveis de tipografia
+6. criar `typography.css`
+7. criar `README.md` interno do projeto
 
 ## Uso
-Sempre que iniciar um novo projeto, seguir este documento e confirmar com o usuário:
-- fonte
-- cores
-- nome do desafio
-- número do projeto
 
-Assim o repositório mantém consistência e todas as etapas básicas são aplicadas automaticamente.
+Sempre que o usuário pedir para iniciar um novo projeto com base neste arquivo, executar esse fluxo exatamente nessa ordem para manter consistência no repositório.
