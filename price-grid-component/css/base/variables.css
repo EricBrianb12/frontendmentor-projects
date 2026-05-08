@@ -19,6 +19,16 @@
   color: var(--white);
 }
 
+.white-75 {
+  color: var(--white);
+  opacity: 75%;
+}
+
+.white-50 {
+  color: var(--white);
+  opacity: 50%;
+}
+
 .gray-500 {
   color: var(--gray-500);
 }

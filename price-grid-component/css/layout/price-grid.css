@@ -3,23 +3,86 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline: 20px;
 }
 
 .price-grid {
   max-width: 653px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 0 15px 30px rgba(0, 81, 171, 0.15);
 }
 
 .community {
+  background-color: var(--white);
   grid-column: 1/-1;
-  padding: 40px;
+  padding: 40px 70px 40px 40px;
+  border-radius: 8px 8px 0 0;
+}
+
+.community h1 {
+  margin-bottom: 24px;
+}
+
+.community p+p {
+  max-width: 55ch;
+}
+
+.community-subtext {
+  margin-bottom: 8px;
 }
 
 .subscription {
+  background-color: var(--teal-500);
   padding: 40px;
+  border-radius: 0 0 0 8px;
+  box-shadow: inset 0 15px 30px rgba(0, 81, 171, 0.15);
+}
+
+.subscription .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscription .btn {
+  margin-top: 29px;
 }
 
 .why-us {
+  background-color: var(--teal-400);
   padding: 40px;
+  border-radius: 0 0 8px 0;
+}
+
+.subscription h2,
+.why-us h2 {
+  margin-bottom: 16px;
+}
+
+
+
+@media (max-width: 600px) {
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community {
+    padding: 34px 36px;
+  }
+
+  .subscription {
+    border-radius: 0;
+    padding: 24px 36px;
+  }
+
+  .subscription .btn {
+    padding: 12px 40px;
+    max-width: 100%;
+  }
+
+  .why-us {
+    border-radius: 0 0 8px 8px;
+    padding: 24px 36px;
+  }
 }

@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  background-color: var(--green-400);
+  color: var(--white);
+  padding: 12.5px 0;
+  text-decoration: none;
+  font: var(--text04);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.0973);
+  transition: .3s ease-in-out;
+  max-width: 100%;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.01);
+}
