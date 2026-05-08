@@ -31,6 +31,8 @@ Cada desafio fica dentro de sua própria pasta e pode ser acessado diretamente p
 
 A raiz do projeto contém a homepage do hub:
 
+- Página publicada: [frontendmentor-projects-beta.vercel.app](https://frontendmentor-projects-beta.vercel.app/)
+
 
 ## Homepage do Hub
 
@@ -77,6 +79,8 @@ Each challenge lives in its own folder and can be accessed directly by route:
 - `/summary-component`
 
 The root of the project contains the main hub homepage:
+
+- Live page: [frontendmentor-projects-beta.vercel.app](https://frontendmentor-projects-beta.vercel.app/)
 
 ## Hub Homepage
 
