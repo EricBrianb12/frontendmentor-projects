@@ -6,15 +6,15 @@ const localizedContent = {
     navRepo: "Repositorio",
     heroEyebrow: "Portfolio estatico",
     heroTitle: "Projetos Frontend Mentor organizados em um unico hub moderno.",
-    heroText: "Uma colecao de desafios desenvolvidos com HTML, CSS e JavaScript puro, com navegacao centralizada, rotas estaticas e estrutura pronta para deploy unico na Vercel.",
+    heroText: "Uma coleção de desafios desenvolvidos com HTML, CSS e JavaScript puro, com navegacão centralizada, rotas estaticas e estrutura pronta para deploy unico na Vercel.",
     heroPrimaryButton: "Explorar projetos",
     heroSecondaryButton: "Ver no GitHub",
-    statsAriaLabel: "Resumo do portfolio",
+    statsAriaLabel: "Resumo do portfólio",
     statsProjectsLabel: "Projetos",
     statsDeployLabel: "Deploy",
     projectsEyebrow: "Desafios",
     projectsTitle: "Todos os projetos",
-    projectsCopy: "Cada card leva para a versao publicada dentro deste proprio repositorio e para a pasta correspondente no GitHub.",
+    projectsCopy: "Cada card leva para a versão publicada dentro deste próprio repositório e para a pasta correspondente no GitHub.",
     footerText: "Construido com HTML, CSS e JavaScript puro para servir como hub central dos desafios Frontend Mentor.",
     projectButton: "Visualizar Projeto",
     githubButton: "GitHub",
@@ -23,17 +23,17 @@ const localizedContent = {
       newbie: "Iniciante"
     },
     descriptions: {
-      "pagina-de-receitas": "Pagina de receita com foco em tipografia, espacamento e hierarquia visual bem definida.",
-      "perfil-links-sociais": "Card de perfil social com estrutura simples, contraste forte e estados de interacao.",
+      "pagina-de-receitas": "Página de receita com foco em tipografia, espaçamento e hierarquia visual bem definida.",
+      "perfil-links-sociais": "Card de perfil social com estrutura simples, contraste forte e estados de interação.",
       "blog-preview-card": "Componente de card editorial com imagem, metadata e chamada para leitura.",
-      "qrcode-component": "Card minimalista com QR code, alinhamento central e composicao enxuta.",
+      "qrcode-component": "Card minimalista com QR code, alinhamento central e composição enxuta.",
       "summary-component": "Componente de resumo com metricas, gradientes e layout dividido em duas colunas.",
       "product-preview-card": "Card de produto com destaque comercial, imagem lateral e CTA principal.",
-      "nft-preview-card": "Preview card com ambientacao dark, hover overlay e bloco de informacoes do item.",
-      "order-summary-component": "Resumo de pedido com destaque para plano, acao primaria e organizacao visual limpa.",
-      "stats-preview-card": "Card com estatisticas, imagem de apoio e foco em contraste e legibilidade.",
-      "column-preview-card": "Layout em tres colunas com identidade visual separada por categoria.",
-      "price-grid-component": "Componente de tabela de preco com blocos bem definidos, CTA e responsividade."
+      "nft-preview-card": "Preview card com ambientação dark, hover overlay e bloco de informações do item.",
+      "order-summary-component": "Resumo de pedido com destaque para plano, ação primária e organização visual limpa.",
+      "stats-preview-card": "Card com estatísticas, imagem de apoio e foco em contraste e legibilidade.",
+      "column-preview-card": "Layout em três colunas com identidade visual separada por categoria.",
+      "price-grid-component": "Componente de tabela de preço com blocos bem definidos, CTA e responsividade."
     }
   },
   en: {
@@ -187,7 +187,7 @@ const updateStaticCopy = () => {
 
 const createProjectCard = (project) => {
   const copy = getCopy();
-  const article = document.createElement("article");
+  const article = document.createElement("article");  
   article.className = "project-card";
 
   article.innerHTML = `
