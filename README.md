@@ -1,55 +1,105 @@
-# Frontend Mentor
+# Frontend Mentor Projects Hub
 
-### [PT-BR]
+Hub centralizado com desafios do Frontend Mentor desenvolvidos com HTML, CSS e JavaScript puro.
 
-Este repositório foi criado com o objetivo de centralizar e organizar todos os projetos desenvolvidos a partir dos desafios da plataforma Frontend Mentor.
+O objetivo deste repositório é reunir os projetos em um único lugar, com uma homepage principal na raiz funcionando como portfólio e ponto de navegação para cada desafio. Cada projeto permanece isolado em sua própria pasta, com seus próprios arquivos e caminhos relativos, permitindo deploy estático em um único projeto na Vercel.
 
-A proposta é praticar e evoluir habilidades em desenvolvimento front-end por meio de desafios reais, focando em boas práticas de HTML, CSS e JavaScript, além de aprimorar atenção a detalhes, responsividade e fidelidade ao design.
+## Stack
 
-Cada projeto está estruturado em sua própria pasta, permitindo fácil navegação, manutenção e visualização individual. Este repositório também funciona como um portfólio de aprendizado contínuo, demonstrando minha evolução técnica ao longo do tempo.
+- HTML5
+- CSS3
+- JavaScript Vanilla
+- Deploy estático na Vercel
 
-Os projetos aqui presentes refletem não apenas a execução dos layouts propostos, mas também a aplicação de melhorias, organização de código e busca por padrões mais próximos do mercado.
+## Como está organizado
 
-### Projetos realizados
+Cada desafio fica dentro de sua própria pasta e pode ser acessado diretamente por rota:
 
-#### Iniciante
+- `/blog-preview-card`
+- `/column-preview-card`
+- `/nft-preview-card`
+- `/order-summary-component`
+- `/pagina-de-receitas`
+- `/perfil-links-sociais`
+- `/price-grid-component`
+- `/product-preview-card`
+- `/qrcode-component`
+- `/stats-preview-card`
+- `/summary-component`
 
-Projeto 01 | [Página de receitas](https://frontendmentor-projects-cyan.vercel.app/)<br>
-Projeto 02 | [Página de links sociais](https://frontendmentor-projects-a5bw.vercel.app/)<br>
-Projeto 03 | [Card de blog](https://frontendmentor-projects-ibtm.vercel.app)<br>
-Projeto 04 | [Card QRcode](https://frontendmentor-projects-jb7u.vercel.app/)<br>
-Projeto 05 | [Componente de resultados](https://sumarry-six.vercel.app/)<br>
-Projeto 06 | [Card de visualização de produto](https://frontendmentor-projects-xf7f.vercel.app/)<br>
-Projeto 07 | [Card de visualização de NFT](https://nft-preview-card-flame-iota.vercel.app/)<br>
-Projeto 08 | [Componente de resumo de pedido](https://order-sumarry-component-psi.vercel.app/)<br>
-Projeto 09 | [Card de estatísticas](https://stats-preview-card-chi-woad.vercel.app/)<br>
-Projeto 10 | [Componente de card em 3 colunas](https://column-preview-card-ruby.vercel.app/)<br>
+A raiz do projeto contém a homepage do hub:
 
-<br>
-<br>
-<br>
+- [index.html](/Users/gabrielbassouto/Documents/frontendmentor-projects/index.html)
+- [style.css](/Users/gabrielbassouto/Documents/frontendmentor-projects/style.css)
+- [script.js](/Users/gabrielbassouto/Documents/frontendmentor-projects/script.js)
 
-### [EN]
+## Estrutura
 
-This repository was created to centralize and organize all projects developed from Frontend Mentor challenges.
+```text
+frontendmentor-projects/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── blog-preview-card/
+├── column-preview-card/
+├── nft-preview-card/
+├── order-summary-component/
+├── pagina-de-receitas/
+├── perfil-links-sociais/
+├── price-grid-component/
+├── product-preview-card/
+├── qrcode-component/
+├── stats-preview-card/
+└── summary-component/
+```
 
-The goal is to practice and improve front-end development skills through real-world challenges, focusing on best practices in HTML, CSS, and JavaScript, as well as enhancing attention to detail, responsiveness, and design accuracy.
+## Homepage do Hub
 
-Each project is structured in its own folder, allowing for easy navigation, maintenance, and individual visualization. This repository also serves as a continuous learning portfolio, showcasing my technical growth over time.
+A homepage principal foi criada para funcionar como um portfólio estático:
 
-The projects included here reflect not only the implementation of the proposed layouts, but also improvements, code organization, and the pursuit of industry-level standards.
+- layout responsivo
+- visual dark mode
+- cards com preview dos projetos
+- botão para visualizar cada projeto
+- botão para abrir a pasta correspondente no GitHub
+- geração dos cards via JavaScript a partir de uma lista central de projetos
 
-### projects carried out
+## Como adicionar um novo projeto
 
-#### Newbie
+1. Crie uma nova pasta na raiz com um nome sem espaços, por exemplo `advice-generator`.
+2. Garanta que o projeto possua pelo menos um `index.html`.
+3. Ajuste os caminhos internos de CSS, JS e assets de forma relativa à própria pasta.
+4. Adicione o novo item na lista do arquivo [script.js](/Users/gabrielbassouto/Documents/frontendmentor-projects/script.js).
+5. Se quiser, adicione também um `preview.jpg` ou imagem equivalente para exibição no card do hub.
 
-Project 01 | [Recipe Page](https://frontendmentor-projects-cyan.vercel.app/)<br>
-Project 02 | [social links profile Page](https://frontendmentor-projects-a5bw.vercel.app/)<br>
-Project 03 | [Blog preview card](https://frontendmentor-projects-ibtm.vercel.app)<br>
-Project 04 | [QRcode card](https://frontendmentor-projects-jb7u.vercel.app/)<br>
-Project 05 | [Summary component](https://sumarry-six.vercel.app/)<br>
-Projeto 06 | [Product preview card](https://frontendmentor-projects-xf7f.vercel.app/)<br>
-Project 07 | [NFT preview card](https://nft-preview-card-flame-iota.vercel.app/)<br>
-Project 08 | [Order summary component](https://order-sumarry-component-psi.vercel.app/)<br>
-Project 09 | [Stats preview card](https://stats-preview-card-chi-woad.vercel.app/)<br>
-Project 10 | [3-column preview card component](https://column-preview-card-ruby.vercel.app/)<br>
+## Rodando localmente
+
+Como este é um projeto estático, você pode abrir a raiz com qualquer servidor simples. Exemplos:
+
+```bash
+python3 -m http.server 8000
+```
+
+ou usar a extensão Live Server no editor.
+
+## Deploy na Vercel
+
+Para subir na Vercel:
+
+1. Envie este repositório para o GitHub.
+2. Importe o repositório na Vercel.
+3. Configure como projeto estático.
+4. Não é necessário comando de build.
+5. Defina a pasta de saída como a raiz do repositório, se a interface pedir.
+
+Depois disso:
+
+- a homepage ficará disponível em `/`
+- cada projeto abrirá em sua própria rota, como `/qrcode-component` e `/price-grid-component`
+
+## Observações
+
+- Nenhum framework foi utilizado.
+- Os projetos existentes foram preservados.
+- A navegação funciona com caminhos relativos, compatíveis com deploy estático.

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hub de projetos Frontend Mentor desenvolvidos com HTML, CSS e JavaScript puro.">
+  <title>Frontend Mentor Projects Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar" aria-label="Navegacao principal">
+        <a class="brand" href="./">Frontend Mentor Hub</a>
+        <a class="topbar-link" href="https://github.com/EricBrianb12/frontendmentor-projects" target="_blank" rel="noopener noreferrer">Repositorio</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio estatico</p>
+        <h1>Projetos Frontend Mentor organizados em um unico hub moderno.</h1>
+        <p class="hero-text">
+          Uma colecao de desafios desenvolvidos com HTML, CSS e JavaScript puro, com navegação centralizada,
+          rotas estaticas e estrutura pronta para deploy unico na Vercel.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explorar projetos</a>
+          <a class="button button-secondary" href="https://github.com/EricBrianb12/frontendmentor-projects" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+      </div>
+
+      <section class="stats" aria-label="Resumo do portfolio">
+        <article class="stat-card">
+          <span class="stat-label">Projetos</span>
+          <strong class="stat-value" data-stat="count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Stack</span>
+          <strong class="stat-value">HTML CSS JS</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Deploy</span>
+          <strong class="stat-value">Vercel Static</strong>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <section class="section-heading" id="projects">
+        <div>
+          <p class="eyebrow">Desafios</p>
+          <h2>Todos os projetos</h2>
+        </div>
+        <p class="section-copy">
+          Cada card leva para a versao publicada dentro deste proprio repositório e para a pasta correspondente no GitHub.
+        </p>
+      </section>
+
+      <section class="project-grid" aria-live="polite" data-project-grid></section>
+    </main>
+
+    <footer class="footer">
+      <p>Construido com HTML, CSS e JavaScript puro para servir como hub central dos desafios Frontend Mentor.</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
