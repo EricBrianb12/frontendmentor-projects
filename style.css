@@ -67,7 +67,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding: 3px 22px;
+  padding: 3px 4px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(10, 18, 33, 0.7);
@@ -127,6 +127,7 @@ a {
 .brand {
   font: 700 0.95rem/1 var(--font-display);
   text-transform: uppercase;
+  margin-left: 10px;
 }
 
 .hero {
