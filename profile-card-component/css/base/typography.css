@@ -1,0 +1,39 @@
+:root {
+  --font-primary: "Kumbh Sans", sans-serif;
+
+  --text01: 700 18px/1.25 var(--font-primary);
+  --text01-letter-spacing: 0;
+
+  --text01-regular: 400 18px/1.25 var(--font-primary);
+  --text01-regular-letter-spacing: 0;
+
+  --text02: 400 14px/1.25 var(--font-primary);
+  --text02-letter-spacing: 0;
+
+  --text03: 400 10px/1.25 var(--font-primary);
+  --text03-letter-spacing: 1.5px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.text01 {
+  font: var(--text01);
+  letter-spacing: var(--text01-letter-spacing);
+}
+
+.text01-regular {
+  font: var(--text01-regular);
+  letter-spacing: var(--text01-regular-letter-spacing);
+}
+
+.text02 {
+  font: var(--text02);
+  letter-spacing: var(--text02-letter-spacing);
+}
+
+.text03 {
+  font: var(--text03);
+  letter-spacing: var(--text03-letter-spacing);
+}

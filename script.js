@@ -33,7 +33,8 @@ const localizedContent = {
       "order-summary-component": "Resumo de pedido com destaque para plano, ação primária e organização visual limpa.",
       "stats-preview-card": "Card com estatísticas, imagem de apoio e foco em contraste e legibilidade.",
       "column-preview-card": "Layout em três colunas com identidade visual separada por categoria.",
-      "price-grid-component": "Componente de tabela de preço com blocos bem definidos, CTA e responsividade."
+      "price-grid-component": "Componente de tabela de preço com blocos bem definidos, CTA e responsividade.",
+      "profile-card-component": "Card de perfil com composição central, avatar destacado e estatísticas resumidas."
     }
   },
   en: {
@@ -70,7 +71,8 @@ const localizedContent = {
       "order-summary-component": "Order summary component with plan emphasis, primary action and clean organization.",
       "stats-preview-card": "Stats card with supporting imagery and a focus on contrast and readability.",
       "column-preview-card": "Three-column layout with a distinct visual identity for each category.",
-      "price-grid-component": "Price grid component with clearly separated blocks, CTA and responsive behavior."
+      "price-grid-component": "Price grid component with clearly separated blocks, CTA and responsive behavior.",
+      "profile-card-component": "Profile card with a centered composition, prominent avatar and condensed stats."
     }
   }
 };
@@ -141,6 +143,12 @@ const projects = [
     slug: "price-grid-component",
     levelKey: "newbie",
     preview: "./price-grid-component/preview.jpg"
+  },
+  {
+    name: "Profile Card Component",
+    slug: "profile-card-component",
+    levelKey: "newbie",
+    preview: "./profile-card-component/preview.jpg"
   }
 ];
 

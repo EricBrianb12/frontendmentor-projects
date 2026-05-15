@@ -21,6 +21,7 @@ Cada desafio fica dentro de sua própria pasta e pode ser acessado diretamente p
 - `/column-preview-card`
 - `/nft-preview-card`
 - `/order-summary-component`
+- `/profile-card-component`
 - `/pagina-de-receitas`
 - `/perfil-links-sociais`
 - `/price-grid-component`
@@ -28,6 +29,10 @@ Cada desafio fica dentro de sua própria pasta e pode ser acessado diretamente p
 - `/qrcode-component`
 - `/stats-preview-card`
 - `/summary-component`
+
+## Projeto 12
+
+- [profile-card-component](./profile-card-component)
 
 A raiz do projeto contém a homepage do hub:
 
@@ -70,6 +75,7 @@ Each challenge lives in its own folder and can be accessed directly by route:
 - `/column-preview-card`
 - `/nft-preview-card`
 - `/order-summary-component`
+- `/profile-card-component`
 - `/pagina-de-receitas`
 - `/perfil-links-sociais`
 - `/price-grid-component`
@@ -77,6 +83,10 @@ Each challenge lives in its own folder and can be accessed directly by route:
 - `/qrcode-component`
 - `/stats-preview-card`
 - `/summary-component`
+
+## Project 12
+
+- [profile-card-component](./profile-card-component)
 
 The root of the project contains the main hub homepage:
 

@@ -94,3 +94,21 @@ Seguir sempre este fluxo conversacional:
 ## Uso
 
 Sempre que o usuário pedir para iniciar um novo projeto com base neste arquivo, executar esse fluxo exatamente nessa ordem para manter consistência no repositório.
+
+## Fluxo de finalização
+
+Quando o usuário disser que o projeto foi finalizado, seguir este checklist:
+
+1. revisar o projeto final para confirmar estrutura, semântica e responsividade
+2. atualizar o `README.md` da raiz trocando placeholders por link real do projeto finalizado
+3. adicionar o projeto na lista do `script.js` da raiz com:
+   - `name`
+   - `slug`
+   - `levelKey`
+   - `preview`
+4. adicionar a descrição localizada do projeto em `pt-BR` e `en` dentro de `script.js`
+5. confirmar que o `preview.jpg` existe dentro da pasta do projeto
+6. revisar `git status` para garantir que apenas as mudanças esperadas serão incluídas
+7. criar um commit com mensagem clara descrevendo a finalização do projeto
+
+Esse fluxo deve ser aplicado sempre que um projeto novo passar de estrutura inicial para projeto finalizado e publicado no hub da raiz.
