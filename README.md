@@ -30,10 +30,6 @@ Cada desafio fica dentro de sua própria pasta e pode ser acessado diretamente p
 - `/stats-preview-card`
 - `/summary-component`
 
-## Projeto 12
-
-- [profile-card-component](./profile-card-component)
-
 A raiz do projeto contém a homepage do hub:
 
 - Página publicada: [frontendmentor-projects-beta.vercel.app](https://frontendmentor-projects-beta.vercel.app/)
@@ -83,10 +79,6 @@ Each challenge lives in its own folder and can be accessed directly by route:
 - `/qrcode-component`
 - `/stats-preview-card`
 - `/summary-component`
-
-## Project 12
-
-- [profile-card-component](./profile-card-component)
 
 The root of the project contains the main hub homepage:
 

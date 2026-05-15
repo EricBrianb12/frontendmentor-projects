@@ -15,6 +15,10 @@ const localizedContent = {
     projectsEyebrow: "Desafios",
     projectsTitle: "Todos os projetos",
     projectsCopy: "Cada card leva para a versão publicada dentro deste próprio repositório e para a pasta correspondente no GitHub.",
+    projectSortLabel: "Ordem",
+    projectSortNewest: "Mais recentes",
+    projectSortOldest: "Mais antigos",
+    projectSortAriaLabel: "Ordenar projetos",
     footerText: "Construido com HTML, CSS e JavaScript puro para servir como hub central dos desafios Frontend Mentor.",
     projectButton: "Visualizar Projeto",
     githubButton: "GitHub",
@@ -53,6 +57,10 @@ const localizedContent = {
     projectsEyebrow: "Challenges",
     projectsTitle: "All projects",
     projectsCopy: "Each card links to the live version inside this repository and to the matching folder on GitHub.",
+    projectSortLabel: "Order",
+    projectSortNewest: "Newest first",
+    projectSortOldest: "Oldest first",
+    projectSortAriaLabel: "Sort projects",
     footerText: "Built with plain HTML, CSS and JavaScript to serve as the central hub for these Frontend Mentor challenges.",
     projectButton: "View Project",
     githubButton: "GitHub",
@@ -155,10 +163,17 @@ const projects = [
 const projectGrid = document.querySelector("[data-project-grid]");
 const countElement = document.querySelector("[data-stat='count']");
 const languageButtons = document.querySelectorAll("[data-language]");
+const sortDropdown = document.querySelector("[data-sort-dropdown]");
+const sortTrigger = document.querySelector("[data-sort-trigger]");
+const sortMenu = document.querySelector("[data-sort-menu]");
+const sortCurrent = document.querySelector("[data-sort-current]");
+const sortOptions = document.querySelectorAll("[data-sort-option]");
 const githubBaseUrl = "https://github.com/EricBrianb12/frontendmentor-projects/tree/main";
 const defaultLanguage = navigator.language?.toLowerCase().startsWith("en") ? "en" : "pt-BR";
 const savedLanguage = localStorage.getItem("hub-language");
+const savedSort = localStorage.getItem("hub-project-order");
 let currentLanguage = savedLanguage && localizedContent[savedLanguage] ? savedLanguage : defaultLanguage;
+let currentSort = savedSort === "oldest" ? "oldest" : "newest";
 
 const getCopy = () => localizedContent[currentLanguage];
 
@@ -191,6 +206,8 @@ const updateStaticCopy = () => {
     button.classList.toggle("is-active", button.dataset.language === currentLanguage);
     button.setAttribute("aria-pressed", String(button.dataset.language === currentLanguage));
   });
+
+  updateSortUi(copy);
 };
 
 const createProjectCard = (project) => {
@@ -224,9 +241,7 @@ const renderProjects = () => {
 
   projectGrid.innerHTML = "";
 
-  const sortedProjects = [...projects].sort((firstProject, secondProject) =>
-    firstProject.name.localeCompare(secondProject.name)
-  );
+  const sortedProjects = currentSort === "oldest" ? [...projects] : [...projects].reverse();
 
   sortedProjects.forEach((project) => {
     projectGrid.appendChild(createProjectCard(project));
@@ -235,6 +250,67 @@ const renderProjects = () => {
   if (countElement) {
     countElement.textContent = String(sortedProjects.length).padStart(2, "0");
   }
+};
+
+const setProjectSort = (sortOrder) => {
+  if (!["newest", "oldest"].includes(sortOrder)) {
+    return;
+  }
+
+  currentSort = sortOrder;
+  localStorage.setItem("hub-project-order", sortOrder);
+  updateSortUi();
+  renderProjects();
+};
+
+const updateSortUi = (copy = getCopy()) => {
+  if (!sortTrigger || !sortMenu || !sortCurrent || !sortOptions.length) {
+    return;
+  }
+
+  sortTrigger.setAttribute("aria-label", copy.projectSortAriaLabel);
+  sortMenu.setAttribute("aria-label", copy.projectSortAriaLabel);
+  sortCurrent.textContent = currentSort === "newest" ? copy.projectSortNewest : copy.projectSortOldest;
+
+  sortOptions.forEach((option) => {
+    const isSelected = option.dataset.sortOption === currentSort;
+    const label = option.dataset.sortOption === "newest" ? copy.projectSortNewest : copy.projectSortOldest;
+
+    option.textContent = label;
+    option.classList.toggle("is-selected", isSelected);
+    option.setAttribute("aria-selected", String(isSelected));
+  });
+};
+
+const closeSortMenu = () => {
+  if (!sortDropdown || !sortTrigger) {
+    return;
+  }
+
+  sortDropdown.classList.remove("is-open");
+  sortTrigger.setAttribute("aria-expanded", "false");
+};
+
+const openSortMenu = () => {
+  if (!sortDropdown || !sortTrigger) {
+    return;
+  }
+
+  sortDropdown.classList.add("is-open");
+  sortTrigger.setAttribute("aria-expanded", "true");
+};
+
+const toggleSortMenu = () => {
+  if (!sortDropdown) {
+    return;
+  }
+
+  if (sortDropdown.classList.contains("is-open")) {
+    closeSortMenu();
+    return;
+  }
+
+  openSortMenu();
 };
 
 const setLanguage = (language) => {
@@ -252,6 +328,33 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     setLanguage(button.dataset.language);
   });
+});
+
+if (sortTrigger) {
+  sortTrigger.addEventListener("click", () => {
+    toggleSortMenu();
+  });
+}
+
+sortOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    setProjectSort(option.dataset.sortOption);
+    closeSortMenu();
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (!sortDropdown || sortDropdown.contains(event.target)) {
+    return;
+  }
+
+  closeSortMenu();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeSortMenu();
+  }
 });
 
 updateStaticCopy();

@@ -290,6 +290,158 @@ main {
   text-align: right;
 }
 
+.section-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.sort-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-soft);
+  font: 700 0.82rem/1 var(--font-display);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.sort-dropdown {
+  position: relative;
+  min-width: 210px;
+}
+
+.sort-trigger {
+  position: relative;
+  width: 100%;
+  min-height: 54px;
+  padding: 0 52px 0 18px;
+  border: 1px solid rgba(124, 247, 196, 0.14);
+  border-radius: 20px;
+  color: var(--text);
+  text-align: left;
+  font: 700 0.92rem/1 var(--font-body);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    linear-gradient(135deg, rgba(16, 30, 54, 0.98), rgba(7, 13, 24, 0.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 14px 30px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition:
+    transform 0.24s ease,
+    border-color 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.sort-trigger::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(89, 200, 255, 0.08), transparent 55%);
+  opacity: 0.9;
+}
+
+.sort-trigger::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  width: 12px;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23eff4ff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+  transform: translateY(-50%);
+  transition: transform 0.24s ease;
+}
+
+.sort-trigger span {
+  position: relative;
+  z-index: 1;
+}
+
+.sort-trigger:hover {
+  transform: translateY(-1px);
+  border-color: rgba(89, 200, 255, 0.34);
+}
+
+.sort-trigger:focus-visible {
+  outline: none;
+  border-color: rgba(124, 247, 196, 0.52);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 0 3px rgba(89, 200, 255, 0.16),
+    0 16px 34px rgba(0, 0, 0, 0.26);
+}
+
+.sort-dropdown.is-open .sort-trigger::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.sort-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid rgba(124, 247, 196, 0.14);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(16, 27, 46, 0.98), rgba(7, 12, 22, 0.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px) scale(0.98);
+  transform-origin: top center;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  z-index: 9;
+}
+
+.sort-dropdown.is-open .sort-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.sort-option {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  color: var(--text-soft);
+  text-align: left;
+  font: 600 0.9rem/1 var(--font-body);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    color 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.sort-option:hover,
+.sort-option:focus-visible {
+  outline: none;
+  color: var(--text);
+  border-color: rgba(89, 200, 255, 0.18);
+  background: rgba(89, 200, 255, 0.08);
+  transform: translateX(2px);
+}
+
+.sort-option.is-selected {
+  color: #04111e;
+  border-color: rgba(124, 247, 196, 0.36);
+  background: linear-gradient(135deg, var(--accent), #9afecf);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -445,6 +597,10 @@ main {
   .section-copy {
     text-align: left;
   }
+
+  .section-meta {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 720px) {
@@ -484,5 +640,15 @@ main {
 
   .project-links a {
     flex: 1 1 100%;
+  }
+
+  .sort-control {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sort-dropdown {
+    width: 100%;
   }
 }

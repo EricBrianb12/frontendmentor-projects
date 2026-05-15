@@ -5,7 +5,7 @@ Este documento descreve o fluxo padrão para iniciar um novo projeto Frontend Me
 ## Objetivo
 Criar uma base consistente para cada novo desafio, incluindo:
 - estrutura inicial de arquivos HTML/CSS
-- atualização automática do `README.md` da raiz com o próximo número de projeto
+- organização do projeto como subpasta do repositório
 - variáveis de cor
 - variáveis de tipografia
 - `README.md` interno do projeto no mesmo estilo dos projetos existentes
@@ -16,10 +16,6 @@ Sempre que o usuário pedir para criar um novo projeto com base neste arquivo, s
 
 1. Perguntar apenas o nome do projeto.
 2. Após receber o nome:
-   - ler o `README.md` da raiz
-   - identificar o último projeto listado
-   - definir o próximo número do projeto seguindo a mesma organização do documento
-   - adicionar o novo projeto no `README.md` da raiz com placeholder `-` no link
    - criar a pasta do projeto com o nome informado pelo usuário
    - montar a estrutura inicial de arquivos e pastas
 3. Depois que a estrutura estiver criada, perguntar quais cores devem ser usadas.
@@ -84,7 +80,7 @@ Não pedir todas as informações de uma vez.
 
 Seguir sempre este fluxo conversacional:
 1. pedir nome do projeto
-2. criar estrutura inicial e atualizar `README.md` da raiz
+2. criar estrutura inicial do projeto
 3. pedir cores
 4. criar `variables.css`
 5. pedir variáveis de tipografia
@@ -100,7 +96,7 @@ Sempre que o usuário pedir para iniciar um novo projeto com base neste arquivo,
 Quando o usuário disser que o projeto foi finalizado, seguir este checklist:
 
 1. revisar o projeto final para confirmar estrutura, semântica e responsividade
-2. atualizar o `README.md` da raiz trocando placeholders por link real do projeto finalizado
+2. manter o `README.md` da raiz apenas com a organização geral do hub, sem criar seção numerada do projeto
 3. adicionar o projeto na lista do `script.js` da raiz com:
    - `name`
    - `slug`

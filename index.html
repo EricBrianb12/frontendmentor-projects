@@ -61,9 +61,34 @@
           <p class="eyebrow" data-i18n="projectsEyebrow">Desafios</p>
           <h2 data-i18n="projectsTitle">Todos os projetos</h2>
         </div>
-        <p class="section-copy" data-i18n="projectsCopy">
-          Cada card leva para a versão publicada dentro deste proprio repositório e para a pasta correspondente no GitHub.
-        </p>
+        <div class="section-meta">
+          <p class="section-copy" data-i18n="projectsCopy">
+            Cada card leva para a versão publicada dentro deste proprio repositório e para a pasta correspondente no GitHub.
+          </p>
+          <div class="sort-control">
+            <span data-i18n="projectSortLabel">Ordem</span>
+            <div class="sort-dropdown" data-sort-dropdown>
+              <button
+                class="sort-trigger"
+                type="button"
+                data-sort-trigger
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-label="Project order"
+              >
+                <span data-sort-current>Mais recentes</span>
+              </button>
+              <div class="sort-menu" data-sort-menu role="listbox" tabindex="-1" aria-label="Project order">
+                <button class="sort-option is-selected" type="button" role="option" data-sort-option="newest" aria-selected="true">
+                  Mais recentes
+                </button>
+                <button class="sort-option" type="button" role="option" data-sort-option="oldest" aria-selected="false">
+                  Mais antigos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="project-grid" aria-live="polite" data-project-grid></section>
